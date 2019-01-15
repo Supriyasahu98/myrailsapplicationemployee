@@ -1,0 +1,31 @@
+u><h1>Edit the Dependents data here</h1></u><br>
+<%= form_with(model: @dependent, scope: :dependent, local: true) do |f| %>
+<body bgcolor="pink">
+<p>
+<%= f.label :Essn %><br>
+<%= f.text_field :Essn %>
+</p>
+ 
+<p>
+<%= f.label :Dependent_name %><br>
+<%= f.text_field :Dependent_name %>
+</p>
+ 
+<p>
+<%= f.label :Sex %><br>
+<%= f.text_field :Sex %>
+</p>
+ 
+<p>
+<%= f.label :Bdate %><br>
+<%= f.text_field :Bdate %>
+</p>
+ 
+<p>
+<%= f.submit %>
+</p></body>
+ 
+<% end %>
+<%= link_to 'Back', dependents_path %>
+
+ 

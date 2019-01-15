@@ -1,0 +1,45 @@
+<br><u><h1>Entered Employee Details</h1></u><br>
+<body bgcolor="pink">
+<p>
+    <strong>First Name:</strong>
+    <%= @employee.Fname %>
+</p>
+ 
+<p>
+    <strong>Last Name:</strong>
+    <%= @employee.Lname %>
+</p>
+<p>
+    <strong>ESSN:</strong>
+    <%= @employee.Essn %>
+</p>
+<p>
+    <strong>Birth date:</strong>
+    <%= @employee.Bdate %>
+</p>
+<p>
+    <strong>Address:</strong>
+    <%= @employee.Address %>
+</p>
+<p>
+    <strong>Sex:</strong>
+    <%= @employee.Sex %>
+</p>
+<p>
+    <strong>Salary:</strong>
+    <%= @employee.Salary %>
+</p>
+<p>
+    <strong>Dnumber:</strong>
+    <%= @employee.Dnumber %>
+</p>
+<%= link_to 'Edit', edit_employee_path(@employee) %> |
+<%= link_to 'Back', employees_path %>
+</body>
+
+
+ 
+
+
+
+ 

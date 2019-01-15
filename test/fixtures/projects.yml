@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Pname: MyString
+  Pnumber: 1
+  Plocation: MyString
+  Dnumber: 1
+  department: 
+
+two:
+  Pname: MyString
+  Pnumber: 1
+  Plocation: MyString
+  Dnumber: 1
+  department: 

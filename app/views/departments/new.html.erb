@@ -1,0 +1,20 @@
+<u><h1>Enter the Department data here</h1></u><br>
+<%= form_with scope: :department, url: departments_path, local: true do |f| %>
+<body bgcolor="pink">
+<p>
+<%= f.label :Dname %><br>
+<%= f.text_field :Dname %>
+</p>
+ 
+<p>
+<%= f.label :Dnumber %><br>
+<%= f.text_field :Dnumber %>
+</p>
+ 
+
+<p>
+<%= f.submit %>
+</p></body>
+ 
+<% end %>
+<%= link_to 'Back', departments_path %>

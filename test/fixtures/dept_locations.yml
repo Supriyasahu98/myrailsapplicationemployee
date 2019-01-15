@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Dnumber: 1
+  Dlocation: MyString
+  department: 
+
+two:
+  Dnumber: 1
+  Dlocation: MyString
+  department: 

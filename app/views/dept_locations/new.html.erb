@@ -1,0 +1,26 @@
+<u><h1>Enter the Department Location data here</h1></u><br>
+<%= form_with scope: :dept_location, url: dept_locations_path, local: true do |f| %>
+<body bgcolor="pink">
+ 
+
+<p>
+<%= f.label :Dnumber %><br>
+<%= f.text_field :Dnumber %>
+</p>
+ 
+<p>
+<%= f.label :Dlocation %><br>
+<%= f.text_field :Dlocation %>
+</p>
+ 
+ 
+<p>
+<%= f.submit %>
+</p></body>
+ 
+<% end %>
+<%= link_to 'Back', dept_locations_path %>
+ 
+ 
+ 
+ 

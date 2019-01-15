@@ -1,0 +1,21 @@
+<br><u><h1>Entered Workson Details</h1></u><br>
+<body bgcolor="pink">
+ 
+<p>
+    <strong>Employee Essn:</strong>
+    <%= @works_on.Essn %>
+</p>
+<p>
+    <strong>Project Number:</strong>
+    <%= @works_on.Pnumber %>
+</p>
+<p>
+    <strong>Hours:</strong>
+    <%= @works_on.Hours %>
+</p>
+ 
+
+<%= link_to 'Edit', edit_works_on_path(@works_on) %> |
+<%= link_to 'Back', works_ons_path %>
+</body>
+ 

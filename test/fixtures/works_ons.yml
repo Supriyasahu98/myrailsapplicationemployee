@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Essn: 1
+  Pnumber: 1
+  Hours: 2018-11-05 16:31:09
+  employee: one
+  project: 
+
+two:
+  Essn: 1
+  Pnumber: 1
+  Hours: 2018-11-05 16:31:09
+  employee: two
+  project: 

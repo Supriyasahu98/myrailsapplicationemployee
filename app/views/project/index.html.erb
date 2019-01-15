@@ -1,0 +1,39 @@
+<u><h1>Listing of Project Data</h1></u>
+<body bgcolor="pink" >
+<%= link_to 'Add New Project Here', new_project_path %>
+<br>
+<table border="2">
+<tr><br>
+ 
+    <th>Pname</th>
+    <th>Pnumber</th>
+    <th>Plocation</th>
+    <th>Dnumber</th>
+    
+    <th colspan="3">Options</th>
+</tr>
+ 
+<% @projects.each do |d| %>
+<tr bgcolor="white">
+      <td><%= d.Pname %></td>
+      <td><%= d.Pnumber %></td>
+      <td><%= d.Plocation %></td>
+      <td><%= d.Dnumber %></td>
+     
+      
+      <td><%= link_to 'show', project_path(d) %></td>
+      <td><%= link_to 'edit', edit_project_path(d) %></td>
+      <td><%= link_to 'Destroy', project_path(d), method: :delete, data: { confirm: 'Are you Sure to delete this department Location Details' } %> </td>
+      </tr>
+      <% end %>
+      </table>
+      </body>
+ 
+ 
+
+
+ 
+
+
+
+ 

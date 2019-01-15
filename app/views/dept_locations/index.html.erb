@@ -1,0 +1,29 @@
+ <u><h1>Listing of Dept locations Data</h1></u>
+<body bgcolor="pink" >
+<%= link_to 'Add New Department locations Here', new_dept_location_path %>
+<br>
+<table border="2">
+<tr><br>
+ 
+    <th>Dnumber</th>
+    <th>Dlocation</th>
+    
+    <th colspan="3">Options</th>
+</tr>
+ 
+<% @dept_locations.each do |d| %>
+<tr bgcolor="white">
+      <td><%= d.Dnumber %></td>
+      <td><%= d.Dlocation %></td>
+     
+      
+      <td><%= link_to 'show', dept_location_path(d) %></td>
+      <td><%= link_to 'edit', edit_dept_location_path(d) %></td>
+      
+      <td><%= link_to 'Destroy', dept_location_path(d), method: :delete, data: { confirm: 'Are you Sure to delete this department Location Details' } %> </td>
+      </tr>
+      <% end %>
+      </table>
+      </body>
+ 
+ 

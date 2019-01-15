@@ -1,0 +1,17 @@
+<br><u><h1>Entered Department Location Details</h1></u><br>
+<body bgcolor="pink">
+ 
+<p>
+    <strong>Department Number:</strong>
+    <%= @dept_location.Dnumber %>
+</p>
+<p>
+    <strong>Department Location:</strong>
+    <%= @dept_location.Dlocation %>
+</p>
+ 
+
+<%= link_to 'Edit', edit_dept_location_path(@dept_location) %> |
+<%= link_to 'Back', dept_locations_path %>
+</body>
+ 

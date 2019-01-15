@@ -1,0 +1,24 @@
+<br><u><h1>Entered Dependents Details</h1></u><br>
+<body bgcolor="pink">
+<p>
+    <strong>Dependent Essn:</strong>
+    <%= @dependent.Essn %>
+</p>
+ 
+<p>
+    <strong>Dependent Name:</strong>
+    <%= @dependent.Dependent_name %>
+</p>
+<p>
+    <strong>Sex</strong>
+    <%= @dependent.Sex %>
+</p>
+<p>
+    <strong>Birth date:</strong>
+    <%= @dependent.Bdate %>
+</p>
+ 
+<%= link_to 'Edit', edit_dependent_path(@dependent) %> |
+<%= link_to 'Back', dependents_path %>
+</body>
+ 

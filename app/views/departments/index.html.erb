@@ -1,0 +1,31 @@
+<u><h1>Listing of Departments Data</h1></u>
+
+<body bgcolor="pink" >
+<%= link_to 'Add New Department Here', new_department_path %>
+<br>
+<table border="2">
+<tr><br>
+ 
+    <th>Dname</th>
+    <th>Dnumber</th>
+    
+    <th colspan="3">Options</th>
+</tr>
+ 
+<% @departments.each do |d| %>
+<tr bgcolor="white">
+      <td><%= d.Dname %></td>
+      <td><%= d.Dnumber %></td>
+     
+      
+      <td><%= link_to 'show', department_path(d) %></td>
+      <td><%= link_to 'edit', edit_department_path(d) %></td>
+      <td><%= link_to 'Destroy', department_path(d), method: :delete, data: { confirm: 'Are you Sure to delete this department Details' } %> </td>
+      
+      </tr>
+      <% end %>
+      </table>
+      </body>
+ 
+ 
+ 

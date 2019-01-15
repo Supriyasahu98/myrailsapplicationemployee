@@ -1,0 +1,30 @@
+<u><h1>Enter the Dependent data here</h1></u><br>
+<%= form_with scope: :dependent, url: dependents_path, local: true do |f| %>
+<body bgcolor="pink">
+<p>
+<%= f.label :Essn %><br>
+<%= f.text_field :Essn %>
+</p>
+ 
+<p>
+<%= f.label :Dependent_name %><br>
+<%= f.text_field :Dependent_name %>
+</p>
+ 
+<p>
+<%= f.label :Sex %><br>
+<%= f.text_field :Sex %>
+</p>
+ 
+<p>
+<%= f.label :Bdate %><br>
+<%= f.text_field :Bdate %>
+</p>
+ 
+
+<p>
+<%= f.submit %>
+</p></body>
+ 
+<% end %>
+<%= link_to 'Back', dependents_path %>

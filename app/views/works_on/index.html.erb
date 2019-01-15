@@ -1,0 +1,40 @@
+<u><h1>Listing of Wroks_on Data</h1></u>
+<body bgcolor="pink" >
+<%= link_to 'Add New works on Here', new_works_on_path %>
+<br>
+<table border="2">
+<tr><br>
+ 
+    <th>Essn</th>
+    <th>Pnumber</th>
+    <th>Hours</th>
+    
+    
+    <th colspan="3">Options</th>
+</tr>
+ 
+<% @works_ons.each do |d| %>
+<tr bgcolor="white">
+      <td><%= d.Essn %></td>
+      <td><%= d.Pnumber %></td>
+      <td><%= d.Hours %></td>
+      
+     
+      
+      <td><%= link_to 'show', works_on_path(d) %></td>
+      <td><%= link_to 'edit', edit_works_on_path(d) %></td>
+      <td><%= link_to 'Destroy', works_on_path(d), method: :delete, data: { confirm: 'Are you Sure to delete this department Location Details' } %> </td>
+      </tr>
+      <% end %>
+      </table>
+      </body>
+ 
+ 
+ 
+
+
+ 
+
+
+
+ 

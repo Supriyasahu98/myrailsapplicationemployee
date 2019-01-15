@@ -1,0 +1,51 @@
+<u><h1>Enter the employee data here</h1></u><br>
+<%= form_with scope: :employee, url: employees_path, local: true do |f| %>
+<body bgcolor="pink">
+<p>
+<%= f.label :First_name %><br>
+<%= f.text_field :Fname %>
+</p>
+ 
+<p>
+<%= f.label :Last_name %><br>
+<%= f.text_field :Lname %>
+</p>
+ 
+<p>
+<%= f.label :ESSN %><br>
+<%= f.text_field :Essn %>
+</p>
+ 
+<p>
+<%= f.label :Bdate %><br>
+<%= f.text_field :Bdate %>
+</p>
+ 
+<p>
+<%= f.label :Address %><br>
+<%= f.text_area :Address %>
+</p>
+ 
+<p>
+<%= f.label :Sex %><br>
+<%= f.text_field :Sex %>
+</p>
+ 
+<p>
+<%= f.label :Salary %><br>
+<%= f.text_field :Salary %>
+</p>
+ 
+<p>
+<%= f.label :Dnumber %><br>
+<%= f.text_field :Dnumber %>
+</p>
+ 
+<p>
+<%= f.submit %>
+</p></body>
+ 
+<% end %>
+<%= link_to 'Back', employees_path %>
+ 
+ 
